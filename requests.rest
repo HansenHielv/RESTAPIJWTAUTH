@@ -1,0 +1,17 @@
+GET http://localhost:2708/data
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQXJpc3RvIiwiaWF0IjoxNjU5MzU0ODQwfQ.3ItbV_K6R8NIkQE447wcK43pfUr-wHQSioHo1ItyNr4
+
+###
+
+POST http://localhost:0897/token
+Content-Type: application/json
+{
+    "token":
+}
+###
+POST http://localhost:0897/login
+Content-Type: application/json
+
+{
+    "username": "Aristo"
+}
