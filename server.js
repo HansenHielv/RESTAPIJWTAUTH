@@ -7,11 +7,17 @@ app.use(express.json())
 
 const data = [{
     username: 'Hansen',
-    title: 'Post 1'
+    email: 'hansennaristo27@gmail.com',
+    no_hp: '0812-8588-1010',
+    umur: '24',
+    lulusan: 'S1'
 }
 ,{
     username: 'Aristo',
-    title: 'Post 2'
+    email: 'hansenaristo27@gmail.com',
+    no_hp: '0812-8588-1010',
+    umur: '24',
+    lulusan: 'S1'
 }]
 app.get('/data', authenticateToken, (req,res) => {
     res.json(data.filter(post => post.username === req.user.name))
